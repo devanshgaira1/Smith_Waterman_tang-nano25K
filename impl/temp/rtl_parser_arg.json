@@ -1,0 +1,29 @@
+{
+ "Device" : "GW5A-25B",
+ "Files" : [
+  {
+   "Path" : "D:/Gowin/sw_25k/src/sw_core.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Gowin/sw_25k/src/sw_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Gowin/sw_25k/src/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Gowin/sw_25k/src/uart_tx.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/Gowin/sw_25k/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

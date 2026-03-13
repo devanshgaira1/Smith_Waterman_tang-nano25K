@@ -1,0 +1,36 @@
+[
+ {
+  "InstFile" : "D:/Gowin/sw_25k/src/sw_top.v",
+  "InstLine" : 3,
+  "InstName" : "sw_top",
+  "ModuleFile" : "D:/Gowin/sw_25k/src/sw_top.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "sw_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Gowin/sw_25k/src/sw_top.v",
+    "InstLine" : 24,
+    "InstName" : "u_rx",
+    "ModuleFile" : "D:/Gowin/sw_25k/src/uart_rx.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "uart_rx"
+   },
+   {
+    "InstFile" : "D:/Gowin/sw_25k/src/sw_top.v",
+    "InstLine" : 44,
+    "InstName" : "u_tx",
+    "ModuleFile" : "D:/Gowin/sw_25k/src/uart_tx.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "uart_tx"
+   },
+   {
+    "InstFile" : "D:/Gowin/sw_25k/src/sw_top.v",
+    "InstLine" : 67,
+    "InstName" : "u_core",
+    "ModuleFile" : "D:/Gowin/sw_25k/src/sw_core.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "sw_core"
+   }
+  ]
+ }
+]

@@ -1,0 +1,36 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\Gowin\sw_25k\src\sw_core.v'
+Analyzing Verilog file 'D:\Gowin\sw_25k\src\sw_top.v'
+Analyzing Verilog file 'D:\Gowin\sw_25k\src\uart_rx.v'
+Analyzing Verilog file 'D:\Gowin\sw_25k\src\uart_tx.v'
+Compiling module 'sw_top'("D:\Gowin\sw_25k\src\sw_top.v":3)
+Compiling module 'uart_rx(CLK_FRE=32'b00000000000000000000000000110010,BAUD_RATE=32'b00000000000011100001000000000000)'("D:\Gowin\sw_25k\src\uart_rx.v":6)
+Compiling module 'uart_tx(CLK_FRE=32'b00000000000000000000000000110010,BAUD_RATE=32'b00000000000011100001000000000000)'("D:\Gowin\sw_25k\src\uart_tx.v":6)
+Compiling module 'sw_core'("D:\Gowin\sw_25k\src\sw_core.v":3)
+Extracting RAM for identifier 'target_mem'("D:\Gowin\sw_25k\src\sw_core.v":30)
+Extracting RAM for identifier 'db_mem'("D:\Gowin\sw_25k\src\sw_core.v":31)
+Extracting RAM for identifier 'P_ram'("D:\Gowin\sw_25k\src\sw_core.v":46)
+Extracting RAM for identifier 'Q_ram'("D:\Gowin\sw_25k\src\sw_core.v":47)
+Extracting RAM for identifier 'Da_ram'("D:\Gowin\sw_25k\src\sw_core.v":48)
+Extracting RAM for identifier 'Db_ram'("D:\Gowin\sw_25k\src\sw_core.v":49)
+NOTE  (EX0101) : Current top module is "sw_top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "D:\Gowin\sw_25k\impl\gwsynthesis\sw_25k.vg" completed
+[100%] Generate report file "D:\Gowin\sw_25k\impl\gwsynthesis\sw_25k_syn.rpt.html" completed
+GowinSynthesis finish
