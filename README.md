@@ -102,12 +102,13 @@ Compared against three CPU implementations. Results below.
 ### Short sequences (8–21 bp), 10 pairs — 10/10 correct ✓
 
 ![Short sequence benchmark](https://github.com/devanshgaira1/Smith_Waterman_tang-nano25K/blob/main/Screenshot%202026-03-13%20175544.png)
-
+![Short sequence benchmark](https://github.com/devanshgaira1/Smith_Waterman_tang-nano25K/blob/main/Screenshot%202026-03-13%20175618.png)
+The slower case has a Lower baud rate
 All 10 pairs score correctly. The FPGA is slower here due to UART overhead dominating compute time for such small sequences.
 
 ### 1000×1000 bp identical sequence — 1/1 correct ✓
 
-![1000bp benchmark](results/benchmark_1000bp.png)
+![1000bp benchmark](https://github.com/devanshgaira1/Smith_Waterman_tang-nano25K/blob/main/Screenshot%202026-03-13%20175603.png)
 
 ```
 CPU (Python)     : 1.145s   0.000875 GCUPS
@@ -119,7 +120,6 @@ The FPGA is 1.6× faster than unoptimised Python for 1000bp sequences.
 
 ### Against optimised CPU baselines
 
-![Full benchmark with Parasail](results/benchmark_parasail.png)
 
 ```
 CPU (Pure Python)    : 0.000801 GCUPS
@@ -208,4 +208,4 @@ python benchmark.py
 
 - Systolic array PE architecture
 - Proper comparison against Parasail with parallel hardware
-- Maybe a paper if the numbers get interesting
+
