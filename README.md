@@ -103,9 +103,9 @@ Compared against three CPU implementations. Results below.
 
 ![Short sequence benchmark](https://github.com/devanshgaira1/Smith_Waterman_tang-nano25K/blob/main/Screenshot%202026-03-13%20175544.png)
 ![Short sequence benchmark](https://github.com/devanshgaira1/Smith_Waterman_tang-nano25K/blob/main/Screenshot%202026-03-13%20175618.png)
-The slower case has a Lower baud rate
-All 10 pairs score correctly. The FPGA is slower here due to UART overhead dominating compute time for such small sequences.
 
+All 10 pairs score correctly. The FPGA is slower here due to UART overhead dominating compute time for such small sequences.
+The slower case has a Lower baud rate
 ### 1000×1000 bp identical sequence — 1/1 correct ✓
 
 ![1000bp benchmark](https://github.com/devanshgaira1/Smith_Waterman_tang-nano25K/blob/main/Screenshot%202026-03-13%20175603.png)
