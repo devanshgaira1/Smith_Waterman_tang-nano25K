@@ -101,7 +101,7 @@ Compared against three CPU implementations. Results below.
 
 ### Short sequences (8–21 bp), 10 pairs — 10/10 correct ✓
 
-![Short sequence benchmark (Screenshot 2026-03-13 175544.png)]
+![Short sequence benchmark](https://github.com/devanshgaira1/Smith_Waterman_tang-nano25K/blob/main/Screenshot%202026-03-13%20175544.png)
 
 All 10 pairs score correctly. The FPGA is slower here due to UART overhead dominating compute time for such small sequences.
 
