@@ -3,7 +3,7 @@
 
 Implementing the Smith-Waterman local sequence alignment algorithm in Verilog on a Sipeed Tang 25K (Gowin GW5A-25) FPGA.
 
-I originally came across [Carmine Pacilio's C++ HLS implementation](https://github.com/CarmineD8/Smith-Waterman-HLS) and used that as the starting point. Pratham Jha helped me understand what the scoring parameters actually mean biologically, which shaped how the algorithm was tuned.
+I originally came across [Carmine Pacilio's C++ HLS implementation](https://github.com/CarmineD8/Smith-Waterman-HLS) and used that as the starting point. 
 
 ---
 
@@ -53,7 +53,7 @@ Diagonal d:
 
 ### Scoring Parameters
 ```
-MATCH     =  1
+MATCH     =  2
 MISMATCH  = -1
 GAP_OPEN  = -4   (total penalty for opening a gap)
 GAP_EXT   = -1   (per-base extension penalty)
@@ -64,15 +64,14 @@ GAP_EXT   = -1   (per-base extension penalty)
 ## How the Code Evolved
 
 ### Stage 1 — First Working Run (784ms)
-Got the anti-diagonal FSM running correctly on short sequences. Verified against the original C++ golden reference. First 1000bp run came in at **784ms**.
+Got the anti-diagonal FSM running correctly on short sequences. Verified against the original C++ golden reference. First  run came in at **784ms**.
 
 The bottleneck was immediately obvious: UART at 115200 baud was spending more time transferring the sequences than computing the alignment.
 
 ### Stage 2 — UART Upgrade (591ms)
 Bumped UART baud rate from 115200 to **921600**. Dropped runtime to **591ms** with zero architectural changes. Just removing the data transfer bottleneck.
 
-This also required upgrading to official Gowin UART modules (uart_rx.v / uart_tx.v) with proper CLK_FRE/BAUD_RATE parameterisation.
-
+This also required upgrading to official Gowin UART modules (uart_rx.v / uart_tx.v) with proper CLK_FRE/BAUD_RATE parameterisation.Both these stages involved short character sequences
 ### Stage 3 — Bug Hunting
 Two critical bugs were found and fixed:
 
